@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #12130F;
+      color:#DCCCBB;
+    }
+
+    .netflix{
+      font-size: 10vh;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      color: red;
+      font-family: 'Bebas Neue', sans-serif;    }
+
+    .pricing-container{
+      gap: 2rem;
+      display: flex;
+      justify-content: space-around; 
+      flex-flow: row wrap;
+      flex: 1;
+    }
+
+    .pricing-plan{
+      border: 1px solid #f3ef1d;
+      background-color: #5B9279;
+      box-shadow:6px 6px 100px 20px #980b0bf0;
+      border-radius: 30px;
+
+      
+    }
+
+    .plan-title{
+      display: flex;
+      font-family: 'Ubuntu', sans-serif;
+      justify-content: center;
+      font-size: 5vh;
+      color: rgb(68, 2, 2);
+      
+    
+    }
+
+    .plan-price{
+      color: #FFFBFC;
+      text-align: center;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.5rem;
+    }
+    
+    .plan-features{          
+      font-family: 'Ubuntu', sans-serif;
+      color: black;
+      align-items: center;
+    }
+
+  .plan-button{
+    color: rgb(49, 12, 12);
+    margin: 0rem 5rem;
+    background-color: rgb(224, 199, 10);
+    border-color: #12130F;
+    
+   }
+
+   button{
+    cursor:pointer;
+    box-shadow: 3px 4px 10px 4px black;
+   }
+
+   .plan-button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.7s;
+   }
+  </style>
+</head>
+
+<body>
+  <p class="netflix">NETFLIX</p>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$9.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
